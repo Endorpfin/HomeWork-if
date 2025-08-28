@@ -72,18 +72,16 @@ public class Main {
         //#6
         int capacityOfTheCarriage = 102;
         int sitting = 60;
-        int passenger = 80;
+        int passenger = 60;
         if (capacityOfTheCarriage > passenger) {
             System.out.println("В вагоне есть места");
         } else {
-            System.out.println("Вагон полностью забит");
+            System.out.println("В вагоне нет мест");
         }
         if (sitting > passenger) {
             System.out.println("В вагоне есть сидячие места");
-        } else {
-            System.out.println("В вагоне нет сидячих мест");
         }
-        if (sitting < passenger && capacityOfTheCarriage > passenger) {
+        if (sitting <= passenger && capacityOfTheCarriage > passenger) {
             System.out.println("в вагоне есть только стоячие места");
         }
         //#7
@@ -92,18 +90,12 @@ public class Main {
         int three = 3;
         if (one > two && one > three) {
             System.out.println("Число " + one + " самое большое");
-        } else {
-            System.out.println("Число " + one + " не самое большое");
         }
         if (two > one && two > three) {
             System.out.println("Число " + two + " самое большое");
-        } else {
-            System.out.println("Число " + two + " не самое большое");
         }
         if (three > one && three > two) {
             System.out.println("Число " + three + " самое большое");
-        } else {
-            System.out.println("Число " + three + " не самое большое");
         }
 
 
